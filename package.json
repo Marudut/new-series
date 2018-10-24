@@ -1,0 +1,20 @@
+{
+  "name": "new_series",
+  "version": "1.0.0",
+  "description": "doet series",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "simarmata",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^6.0.0",
+    "gulp-clean-css": "^3.10.0",
+    "gulp-sass": "^4.0.2"
+  },
+  "dependencies": {
+    "gulp-minify": "^3.1.0"
+  }
+}

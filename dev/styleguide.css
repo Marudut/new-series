@@ -1,0 +1,39 @@
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+    height: 44px;
+    background-color: purple;
+    
+}
+.navbar-wrapper{
+    display: flex;
+    width: 960px;
+    align-items: center;
+    box-sizing: border-box;
+    
+}
+.logo {
+    margin-right: auto;
+    
+}
+.logo img{
+    height: 44px;
+    width: auto;
+    }
+.logo a , .link a{
+    font-size: 1rem;
+    text-decoration: none;
+    color: azure;
+    font-family: 'open sans',sans-serif;
+
+}
+.link a {
+    
+    padding-left: 10px;
+    text-transform: uppercase;
+    
+
+}
