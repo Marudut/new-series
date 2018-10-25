@@ -6,19 +6,19 @@ nav {
     align-items: center;
     width: 100%;
     margin: 0 auto;
-    height: 44px;
+    height: $navbar-height;
     background-color: $grey-dark;
     
 }
 .navbar-wrapper {
     display: flex;
-    width: 960px;
-    align-items: center;
+    width: $container;    
     box-sizing: border-box;
     
 }
 .logo {
     margin-right: auto;
+    padding-left: 10px;
     
 
     img{
@@ -29,14 +29,19 @@ nav {
 .logo a , .link a {
     font-size: 14px;
     text-decoration: none;
-    color: azure;
+    color: $putih;
     font-family: 'open sans',sans-serif;
+    &:hover{
+        color: $grey;
+        transition: all .25 ease;
+    }
 
 }
 .link a {
     
     padding-left: 10px;
     text-transform: uppercase;
+    
     
 
 }

@@ -7,14 +7,13 @@ gulp.task('sass', function() {
     // content
     return gulp.src('dev/sass/*.scss')
     .pipe(sass())
-    .pipe(gulp.dest('css'))
+    .pipe(gulp.dest('dev'))
 });
 
 gulp.task('minify', function() {
     // content
     return gulp.src('dev/*.css')
         .pipe(autoprefixer({browsers: ['last 3 versions']}))
-        .pipe(gulp.dest('css'))
         .pipe(minify({compatibility: 'ie8'}))
         .pipe(gulp.dest('dist'))
 });
@@ -27,7 +26,7 @@ gulp.task('watch', function() {
 
 gulp.task('minify-watch', function() {
     // content
-    gulp.watch('css/*.css', ['minify']);
+    gulp.watch('dev/*.css', ['minify']);
 });
 
 gulp.task('default',['watch','minify-watch']);
